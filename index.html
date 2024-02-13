@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Pacifico&family=Playfair:ital,opsz,wght@1,5..1200,600&family=Sofia+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main class="сontainer">
+        <section class="main__question" id="hide">
+            <div class="title">
+                Станешь со мной психически больным в этот день?)
+            </div>
+            <div class="gif">
+                <div class="tenor-gif-embed" data-postid="13027423" data-share-method="host" data-aspect-ratio="1.05714" ><a href="https://tenor.com/view/valentines-love-cute-happy-valentines-day-gif-13027423">Valentines Love Sticker</a>from <a href="https://tenor.com/search/valentines-stickers">Valentines Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            </div>
+            <div class="buttons">
+                <button class="yes" id="myBtn">
+                    Да
+                </button>
+                <button type="button" id="btnNo" class="no" > Нет </button>
+            </div>
+        </section>
+
+
+        <section class="main__answer" id="answer">
+            <div class="title">
+                Я в тебе не сомневалась &#10084;
+            </div>
+            <div class="gif">
+                <div class="tenor-gif-embed" data-postid="13811976483166675868" data-share-method="host" data-aspect-ratio="1.0641" data-width="100%"><a href="https://tenor.com/view/peach-goma-love-peach-cat-peach-and-goma-love-peach-goma-heart-gif-13811976483166675868">Peach Goma Love Peach Cat Sticker</a>from <a href="https://tenor.com/search/peach+goma+love-stickers">Peach Goma Love Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById("myBtn").addEventListener("click", function(){
+    document.getElementById("hide").style.display = "none";
+    document.getElementById("answer").style.display = "block";
+});
+
+const random = (min, max) => {
+    const rand = min + Math.random() * (max - min + 1);
+    return Math.floor(rand);
+    }
+
+    // const btn = document.getElementById("btnNo");
+    document.getElementById("btnNo").addEventListener('mouseenter', function() {
+        document.getElementById("btnNo").style.left = `${random(0, 100)}%`;
+        document.getElementById("btnNo").style.top = `${random(0, 100)}%`;
+        // console.log('Hover The Cursor');
+    });
+        </script>
+    
+</body>
+</html>
